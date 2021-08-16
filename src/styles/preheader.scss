@@ -1,0 +1,30 @@
+@media screen and (max-width: 375px) {
+  .preheader {
+    position: absolute;
+    width: 375px;
+    height: 56px;
+    top: -1px;
+    background: #90caf9;
+  }
+}
+@media screen and (min-width: 376px) {
+  .preheader {
+    background: #90caf9;
+  }
+}
+
+.shopping-image {
+  margin-right: 18px;
+}
+
+.discount-text {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.center-elements {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

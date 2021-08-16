@@ -1,0 +1,17 @@
+body {
+  background: #ffffff;
+  margin: 0;
+}
+@media screen and (max-width: 375px) {
+  body {
+    background: #ffffff;
+  }
+}
+@import "./preheader.scss";
+@import "./header.scss";
+@import "./access.scss";
+@import "./programs.scss";
+@import "./plans.scss";
+@import "./stories.scss";
+@import "./journey.scss";
+@import "./faq.scss";

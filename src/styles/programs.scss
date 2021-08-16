@@ -1,0 +1,64 @@
+@media screen and (max-width: 375px) {
+  .program {
+    width: 343px;
+    margin: 40px 0px;
+    margin-left: 15px;
+  }
+}
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .access-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .access-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    left: 195px;
+    top: 0px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+  }
+}
+
+.program-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 343px;
+  height: 474px;
+  left: 0px;
+  top: 80px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 48px 0px;
+  margin-top: 5px;
+}

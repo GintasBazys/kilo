@@ -1,0 +1,41 @@
+@media screen and (max-width: 375px) {
+  .header {
+    position: absolute;
+    width: 375px;
+    left: 0px;
+    top: 50px;
+    border-radius: 0px;
+  }
+}
+.header {
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+}
+.yoga-program {
+  position: static;
+  width: 730px;
+  height: 56px;
+  left: calc(50% - 730px / 2);
+  top: calc(50% - 56px / 2 + 14px);
+
+  /* Heading 1/H1 Desktop */
+
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 56px;
+  /* identical to box height, or 140% */
+
+  text-align: center;
+
+  color: #22222c;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
