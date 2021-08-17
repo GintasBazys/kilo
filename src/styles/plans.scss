@@ -1,38 +1,11 @@
 .plans-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
-  position: static;
-  width: 352px;
-  height: 409px;
-  left: 0px;
-  top: 80px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 16px 0px;
 }
 
 .pricing-checkout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 16px;
-
   width: 352px;
   height: 131px;
-  left: 0px;
-  top: 0px;
-
-  /* White */
-
-  background: #ffffff;
-  /* Primary */
 
   border: 2px solid #ff9b4e;
   box-sizing: border-box;
@@ -43,38 +16,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-
-  position: static;
-  width: 320px;
   height: 99px;
-  left: 16px;
-  top: 16px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 8px 0px;
 }
 .pricing-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-
-  position: static;
-  width: 292px;
   height: 99px;
-  left: 0px;
-  top: 0px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0px 4px;
   margin-bottom: 45px;
 }
@@ -345,34 +294,11 @@
   margin: 0px 8px;
 }
 .pricing-circle {
-  position: static;
-  left: 92.5%;
-  right: 0%;
-  top: 37.88%;
-  bottom: 37.88%;
-
   opacity: 0.08;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 0px 4px;
 }
 
 .pricing-circle-selected {
-  position: static;
-  left: 92.5%;
-  right: 0%;
-  top: 37.88%;
-  bottom: 37.88%;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 0px 4px;
 }
 
@@ -408,13 +334,7 @@
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
 .get-plan-text {
-  position: static;
   width: 352px;
-  left: calc(50% - 352px / 2);
-  top: 74.84%;
-  bottom: 15.82%;
-
-  /* Caption Mobile */
 
   font-family: SF Pro Text;
   font-style: normal;
@@ -429,12 +349,6 @@
 
   color: #39353c;
 
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 3;
-  align-self: stretch;
-  flex-grow: 0;
   margin: 16px 0px;
 }
 .get-my-plan-text {
@@ -490,36 +404,25 @@
   /* Black */
 
   color: #39353c;
-}
-.safe-checkout {
-  position: static;
-  width: 352px;
-  left: calc(50% - 352px / 2);
-  top: 93%;
-  bottom: 0%;
-
-  background: url("../assets/checkout_icon.png");
 
   /* Inside Auto Layout */
 
   flex: none;
-  order: 5;
+  order: 4;
   align-self: stretch;
   flex-grow: 0;
   margin: 16px 0px;
+}
+.safe-checkout {
+  background: url("../assets/checkout_icon.png");
+
+  margin: 16px 0px;
   height: 54px;
-  border-radius: 0px;
 }
 .orange-text {
   color: #ff9b4e;
 }
 .monthly-payments {
-  position: static;
-  left: 0%;
-  right: 68.84%;
-  top: 0%;
-  bottom: 0%;
-
   /* Heading 2/H2 Desktop */
 
   font-family: SF Pro Display;

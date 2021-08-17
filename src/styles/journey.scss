@@ -8,20 +8,8 @@
 @media screen and (min-width: 727px) {
   .journey-block {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: static;
     width: 734px;
     height: 422px;
-    left: 193px;
-    top: 1750px;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    flex-grow: 0;
     margin: 48px 0px;
   }
 }
@@ -43,11 +31,7 @@
   }
 }
 .start-yoga-text {
-  position: static;
   width: 350px;
-  left: calc(50% - 350px / 2 - 0.5px);
-  top: 0%;
-  bottom: 92.42%;
 
   /* Heading 3/H3 Desktop */
 
@@ -61,26 +45,10 @@
   /* Grey */
 
   color: #22222c;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 24px 0px;
 }
 .yoga-journey-picture {
-  position: static;
-  width: 343px;
-  height: 366px;
-  left: 0px;
-  top: 56px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
   order: 1;
-  flex-grow: 0;
   margin-left: -25px;
 }
 @media screen and (max-width: 726px) {
@@ -104,68 +72,21 @@
 }
 @media screen and (min-width: 727px) {
   .positive-yoga-header {
-    position: static;
-    width: 343px;
-    left: calc(50% - 343px / 2 - 4px);
-    top: 0%;
-    bottom: 88.89%;
-
-    /* Heading 3/H3 Desktop */
-
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height, or 133% */
-
-    /* Grey */
 
     color: #22222c;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 24px 0px;
   }
-}
-.positive-yoga-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
-  position: static;
-  width: 351px;
-  height: 232px;
-  left: 0px;
-  top: 56px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 24px 0px;
 }
 .positive-yoga-list-item {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
 
-  position: static;
   width: 311px;
-  left: 0px;
-  top: 0px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 8px 0px;
 }
 .positive-yoga-text {

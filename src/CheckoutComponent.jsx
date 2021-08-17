@@ -20,7 +20,7 @@ const CheckoutComponent = () => {
             />
             <p className="discount-text">
               50% discount only valid for{" "}
-              <span style={{ fontWeight: "600" }}>00:15:49</span>
+              <span className="font-bold">00:15:49</span>
             </p>
           </div>
         </div>

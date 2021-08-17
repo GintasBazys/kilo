@@ -104,8 +104,8 @@ const PlanComponent = () => {
         </p>
         <p className="payment-terms">
           By choosing a payment method you agree to the{" "}
-          <span style={{ color: "lightblue" }}>T&Cs</span> and{" "}
-          <span style={{ color: "lightblue" }}>Privacy Policy</span>
+          <span className="light-blue">T&Cs</span> and <br />
+          <span className="light-blue">Privacy Policy</span>
         </p>
         <div className="safe-checkout"></div>
       </div>
