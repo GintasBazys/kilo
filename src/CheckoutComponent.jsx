@@ -7,15 +7,11 @@ import FAQComponent from "./checkout/FAQComponent";
 import JourneyComponent from "./checkout/JourneyComponent";
 
 const CheckoutComponent = () => {
-  const padTime = (time) => {
-    return time.length === 1 ? `0${time}` : `${time}`; //add 0 if time is in sinle digits
-  };
-
   const format = (time) => {
     //format time
     const minutes = Math.floor(time / 60);
     const seconds = time - minutes * 60;
-    return `${minutes}:${padTime(seconds)}`;
+    return `${minutes}:${seconds}`;
   };
 
   const [counter, setCounter] = React.useState(949); //15:49 in seconds
