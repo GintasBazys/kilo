@@ -1,13 +1,37 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import shoppingImage from "./assets/shopping_icon.png";
-import yogaImage from "./assets/yoga_logo.png";
+import React, { useEffect } from "react";
+import shoppingImage from "./assets/shopping_icon.svg";
+import yogaImage from "./assets/yoga_logo.svg";
 import TestimoniesComponent from "./checkout/TestimoniesComponent";
 import PlanComponent from "./checkout/PlanComponent";
 import FAQComponent from "./checkout/FAQComponent";
 import JourneyComponent from "./checkout/JourneyComponent";
 
 const CheckoutComponent = () => {
+  const padTime = (time) => {
+    return time.length === 1 ? `0${time}` : `${time}`; //add 0 if time is in sinle digits
+  };
+
+  const format = (time) => {
+    //format time
+    const minutes = Math.floor(time / 60);
+    const seconds = time - minutes * 60;
+    return `${minutes}:${padTime(seconds)}`;
+  };
+
+  const [counter, setCounter] = React.useState(949); //15:49 in seconds
+  useEffect(() => {
+    let timer;
+    if (counter > 0) {
+      timer = setTimeout(() => setCounter((c) => c - 1), 1000); //update Counter
+    }
+
+    return () => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+    };
+  }, [counter]); //render counter on each state change
+
   return (
     <div>
       <div>
@@ -20,7 +44,7 @@ const CheckoutComponent = () => {
             />
             <p className="discount-text">
               50% discount only valid for{" "}
-              <span className="font-bold">00:15:49</span>
+              <span className="font-bold">00:{format(counter)}</span>
             </p>
           </div>
         </div>

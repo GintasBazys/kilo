@@ -1,19 +1,19 @@
-/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 
-import expandMoreImage from "../assets/expand_more.png";
+import expandMoreImage from "../assets/expand_more.svg";
 
 const FAQComponent = () => {
   useEffect(() => {
-    const faqBlocks = document.querySelectorAll(".faq-container");
+    const faqBlocks = document.querySelectorAll(".faq-container"); //select all FAQ questions containers
 
     faqBlocks.forEach((block) => {
+      //on each container sellect toogle class
       const faqToggle = block.querySelector(".faq-toggle");
       faqToggle.addEventListener("click", () => {
         if (block.classList.contains("is-toggled")) {
-          block.classList.remove("is-toggled");
+          block.classList.remove("is-toggled"); //hide answer
         } else {
-          block.classList.add("is-toggled");
+          block.classList.add("is-toggled"); //display answer
         }
       });
     });
@@ -39,8 +39,8 @@ const FAQComponent = () => {
           <img className="faq-image" src={expandMoreImage} />
         </div>
         <div className="faq-answer">
-          Your plan will be accessible in Positive Yoga's web app with a special
-          link generated after your purchase.
+          Your plan will be accessible in Positive Yoga&apos;s web app with a
+          special link generated after your purchase.
         </div>
       </div>
       <div className="faq-container">

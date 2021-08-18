@@ -1,10 +1,63 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import selectedPlanImage from "../assets/plan_selected_icon.png";
-import checkBoxImage from "../assets/circle.png";
-import programDescriptionImage from "../assets/program_description_image.png";
+import React, { useState } from "react";
+import selectedPlanImage from "../assets/plan_selected_icon.svg";
+import checkBoxImage from "../assets/circle.svg";
+import programDescriptionImage from "../assets/program_description_image.svg";
 
 const PlanComponent = () => {
+  const [pricingCircle, setPricingCircle] = useState({
+    sixMonths: true,
+    threeMonths: false,
+    oneMonth: false,
+  });
+
+  const selectSixMonths = () => {
+    if (pricingCircle.sixMonths) {
+      setPricingCircle((prevState) => ({
+        ...prevState,
+        sixMonths: false,
+      }));
+    } else if (!pricingCircle.sixMonths) {
+      setPricingCircle((prevState) => ({
+        ...prevState,
+        sixMonths: true, //show six months
+        threeMonths: false,
+        oneMonth: false,
+      }));
+    }
+  };
+
+  const selectThreeMonths = () => {
+    if (!pricingCircle.threeMonths) {
+      setPricingCircle((prevState) => ({
+        ...prevState,
+        threeMonths: true, //show three months
+        oneMonth: false,
+        sixMonths: false,
+      }));
+    } else if (pricingCircle.threeMonths) {
+      setPricingCircle((prevState) => ({
+        ...prevState,
+        threeMonths: true,
+      }));
+    }
+  };
+
+  const selectMonth = () => {
+    if (!pricingCircle.oneMonth) {
+      setPricingCircle((prevState) => ({
+        ...prevState,
+        threeMonths: false,
+        oneMonth: true, //show one month
+        sixMonths: false,
+      }));
+    } else if (pricingCircle.oneMonth) {
+      setPricingCircle((prevState) => ({
+        ...prevState,
+        oneMonth: true,
+      }));
+    }
+  };
+
   return (
     <div className="plan-block">
       <div className="choose-plan-block">
@@ -36,11 +89,14 @@ const PlanComponent = () => {
                   </div>
                 </div>
               </div>
-              <div
-                onClick={() => alert("test")}
-                className="pricing-circle-selected"
-              >
-                <img src={selectedPlanImage} alt="Checkbox"></img>
+              <div onClick={selectSixMonths}>
+                {pricingCircle.sixMonths ? (
+                  <img src={selectedPlanImage} alt="Checkbox"></img>
+                ) : (
+                  <div className="pricing-circle">
+                    <img src={checkBoxImage} alt="Checkbox"></img>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -64,8 +120,14 @@ const PlanComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="pricing-circle">
-                <img src={checkBoxImage} alt="Checkbox"></img>
+              <div onClick={selectThreeMonths}>
+                {pricingCircle.threeMonths ? (
+                  <img src={selectedPlanImage} alt="Checkbox"></img>
+                ) : (
+                  <div className="pricing-circle">
+                    <img src={checkBoxImage} alt="Checkbox"></img>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -85,8 +147,14 @@ const PlanComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="pricing-circle">
-                <img src={checkBoxImage} alt="Checkbox"></img>
+              <div onClick={selectMonth}>
+                {pricingCircle.oneMonth ? (
+                  <img src={selectedPlanImage} alt="Checkbox"></img>
+                ) : (
+                  <div className="pricing-circle">
+                    <img src={checkBoxImage} alt="Checkbox"></img>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -110,7 +178,7 @@ const PlanComponent = () => {
         <div className="safe-checkout"></div>
       </div>
       <div className="program-description-block">
-        <h3 className="program-header-text">What's in my program?</h3>
+        <h3 className="program-header-text">What&apos;s in my program?</h3>
         <div className="program-description">
           <img src={programDescriptionImage} alt="Program description"></img>
         </div>

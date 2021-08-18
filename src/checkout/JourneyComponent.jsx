@@ -1,6 +1,6 @@
 import React from "react";
 import nutritionImage from "../assets/Nutrition.png";
-import greenChekmark from "../assets/green_checkmark.png";
+import greenChekmark from "../assets/green_checkmark.svg";
 
 const JourneyComponent = () => {
   return (

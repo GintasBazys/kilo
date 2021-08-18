@@ -58,21 +58,11 @@
   line-height: 24px;
 }
 .name-text {
-  position: static;
-  left: 0%;
-  right: 14.67%;
-  top: 0%;
-  bottom: 47.37%;
-
-  /* Heading 5/H5 Mobile */
-
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height, or 133% */
-
   letter-spacing: -0.4px;
 
   /* Grey */
@@ -81,41 +71,18 @@
 
   mix-blend-mode: normal;
 
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0px 0px;
 }
 .location-text {
-  position: static;
-  left: 0%;
-  right: 0%;
-  top: 52.63%;
-  bottom: 0%;
-  width: 100px;
-  /* Caption/Caption Mobile */
-
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  /* identical to box height, or 150% */
-
-  /* Grey */
-
   color: #22222c;
 
   mix-blend-mode: normal;
   opacity: 0.64;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 0px 0px;
 }
 .star {

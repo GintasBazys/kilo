@@ -1,7 +1,7 @@
 import React from "react";
-import starImage from "../assets/stars_icon.png";
-import emilyImage from "../assets/Emily.png";
-import kylieImage from "../assets/Kylie.png";
+import starImage from "../assets/stars_icon.svg";
+import emilyImage from "../assets/Emily.svg";
+import kylieImage from "../assets/Kylie.svg";
 import jesicaImage from "../assets/Jesica.png";
 
 const TestimoniesComponent = () => {

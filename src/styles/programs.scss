@@ -18,22 +18,5 @@
 }
 
 .program-description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
-  position: static;
-  width: 343px;
-  height: 474px;
-  left: 0px;
-  top: 80px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 48px 0px;
   margin-top: 5px;
 }
