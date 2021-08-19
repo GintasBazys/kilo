@@ -68,8 +68,7 @@ const CheckoutComponent = () => {
           <div>
             <FAQComponent />
           </div>
-
-          <div>
+          <div className="start-block">
             <h2 className="start-text">Start your yoga program today!</h2>
           </div>
           <PlanComponent />

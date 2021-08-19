@@ -117,3 +117,18 @@
 
   color: #22222c;
 }
+@media screen and(max-width: 470px) and(min-width: 376px) {
+  .start-block {
+    display: flex;
+    margin-left: 50px;
+  }
+  .yoga-access {
+    display: flex;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .yoga-access {
+    display: flex;
+  }
+}

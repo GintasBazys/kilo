@@ -1,10 +1,6 @@
-@media screen and (max-width: 375px) {
-  .preheader {
-    width: 375px;
-    height: 56px;
-    top: -1px;
-    background: #90caf9;
-  }
+.preheader {
+  height: 56px;
+  background: #90caf9;
 }
 @media screen and (min-width: 376px) {
   .preheader {
